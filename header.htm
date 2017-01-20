@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Wanderlust</title>
+<script type="text/javascript">
+	var x=1;
+	function slider()
+	{
+		if(x<3)
+		{
+			var picLink = "background-image:url(background-image:url(pics/slide"+x+".png));";
+			document.getElementById("pic_container").background-image= picLink;
+			alert("picLink");
+			x++;
+		}
+		else
+			x=1;
+	}
+</script>
+<link href="home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="setInterval(slider(), 2000)">
+<div class="container">
+	<img src="pics/travel-icon-sketching.jpg" width="81" height="88" hspace="20" vspace="5">  <img src="pics/logo.png" width="198" height="74"> <font color="#EEA51E" size="3">...for all those who wander aren't lost</font>
+	<br><br>
+	<div id="menu">	
+		<ul>	
+		<li><a href="#">Home</a></li>
+		<li><a href="tours.htm">Tours</a></li>
+		<li><a href="fee.htm">Fee Structure</a></li>
+		<li><a href="about.htm">About</a></li>	
+		<li><a href="contact.htm">Contact Us</a></li>
+		</ul>
+	</div>
+	<br>
+	<div id="pic_container" style="background-image:url(pics/slide1.png);">
+		<div id="sel">
+		</div>
+		<div id="sel" style="left:290px; background-color:#999999">
+		</div>
+		<div id="sel" style="left:310px;">
+		</div>
+		<div id="pic_text">
+			<h3>The Lighthouse of Fakebook</h3>
+			<p>This lighthouse is not a property of either Fakebook or Chromefox</p>
+		</div>
+	</div>
+	<br><br>
+	<div id="sidebar">
+		<p><b>Registration</b></p>
+   		<form name="form1" method="post" action="">
+			UserID/E-mail:<input type="text" name="sign_user"><br><br>
+			Password:<input type="password" name="sign_pass"><br><br>
+			<input type="submit" value="SignIn">
+    	</form>
+		<p style="font-size:12px">Not a user? Create Account</p>
+	</div>
+	<p id="content_text">
+		<b>1911 Handgun</b><br>
+		The M1911 is a single-action, semi-automatic, magazine-fed, recoil-operated pistol chambered for the .45 ACP cartridge. It served as the standard-issue sidearm for the United States Armed Forces from 1911 to 1986. It was first used in later stages of the Philippine-American War, and was widely used in World War I, World War II, the Korean War, and the Vietnam War. The pistol's formal designation as of 1940 was Automatic Pistol, Caliber .45, M1911 for the original model of 1911 or Automatic Pistol, Caliber .45, M1911A1 for the M1911A1, adopted in 1924. The designation changed to Pistol, Caliber .45, Automatic, M1911A1 in the Vietnam era.
+	</p>
+</div>
+</div> 
+</body>
+</html>
